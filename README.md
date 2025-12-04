@@ -1,70 +1,181 @@
-# Getting Started with Create React App
+# Shipping Solar Optimizer 🚢☀️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-In the project directory, you can run:
+**Advanced system for solar fuel distribution across Indonesian archipelago**
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌊 Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Shipping Solar Optimizer is a comprehensive web-based platform designed to optimize the distribution of solar fuel across Indonesia's 17,000+ islands. This system leverages AI-powered algorithms to streamline maritime logistics, improve route efficiency, and ensure timely delivery of sustainable energy resources.
 
-### `npm test`
+### 🌟 Key Highlights
+- **Real-time vessel tracking** and route optimization
+- **AI-powered scheduling** for port operations
+- **Interactive map visualization** of Indonesian archipelago
+- **Fuel allocation management** with predictive analytics
+- **Performance dashboard** with comprehensive metrics
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+### 🗺️ Interactive Map Visualization
+- Real-time vessel position tracking
+- Port locations across Indonesian islands
+- Optimal route highlighting
+- Geographic data overlay
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⚡ AI-Powered Optimization
+- Dynamic route calculation based on weather and tides
+- Fuel consumption optimization algorithms
+- Port scheduling conflict resolution
+- Capacity planning and allocation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📊 Analytics Dashboard
+- Real-time performance metrics
+- Fuel distribution statistics
+- Vessel utilization reports
+- Cost analysis and savings visualization
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📱 Responsive Design
+- Fully responsive across all devices
+- Mobile-friendly interface for field operations
+- Dark/Light mode ready
+- Cross-browser compatibility
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Frontend Framework**
+- React 18.2.0
+- React DOM
+- Create React App
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Styling & UI**
+- CSS3 with modern features
+- Responsive Design
+- Custom animations and transitions
+- Google Fonts (Inter, Poppins)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Development Tools**
+- Git & GitHub
+- npm package manager
+- ESLint for code quality
+- Chrome DevTools
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Deployment**
+- Vercel (for production deployment)
+- Netlify (alternative)
+- GitHub Pages
 
-## Learn More
+## 🚀 Live Demo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🌐 **Live Application:** [shipping-solar-optimizer.vercel.app](https://shipping-solar-optimizer.vercel.app)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📱 **Mobile Responsive:** Yes
 
-### Code Splitting
+⚡ **Performance:** Optimized loading with smooth transitions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📦 Installation
 
-### Analyzing the Bundle Size
+### Prerequisites
+- Node.js 16.x or higher
+- npm 8.x or higher
+- Git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Step-by-Step Setup
 
-### Making a Progressive Web App
+1. **Clone the repository**
+```bash
+git clone https://github.com/Alvinhidayatullah/Dashboard-FE---Shipping-Solar-Optimizer.git
+cd Dashboard-FE---Shipping-Solar-Optimizer
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **Install dependencies**
+```bash
+npm install
+```
 
-### Advanced Configuration
+3. **Start development server**
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. **Open in browser**
+Navigate to `http://localhost:3000`
 
-### Deployment
+### Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+| Script | Description |
+|--------|-------------|
+| `npm start` | Runs the app in development mode |
+| `npm run build` | Builds the app for production |
+| `npm test` | Launches the test runner |
+| `npm run eject` | Ejects from Create React App |
 
-### `npm run build` fails to minify
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+shipping-solar-optimizer/
+├── public/
+│   ├── index.html              # Main HTML template
+│   ├── favicon.ico             # App icon
+│   └── manifest.json           # PWA manifest
+├── src/
+│   ├── components/             # React components
+│   │   ├── MapVisualization/   # Map components
+│   │   ├── OptimizationPanel/  # Control panels
+│   │   ├── TimeSchedule/       # Scheduling components
+│   │   └── Analytics/          # Dashboard components
+│   ├── styles/                 # CSS files
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── components/
+│   ├── utils/                  # Helper functions
+│   │   ├── distanceCalculator.js
+│   │   ├── optimizationAlgorithms.js
+│   │   └── dataFormatters.js
+│   ├── App.js                  # Main App component
+│   ├── index.js                # Entry point
+│   └── reportWebVitals.js      # Performance metrics
+├── package.json                # Dependencies and scripts
+├── README.md                   # This file
+└── .gitignore                  # Git ignore rules
+```
+
+### Solution
+Shipping Solar Optimizer addresses these challenges by:
+1. **Optimizing Routes**: AI algorithms calculate most efficient paths
+2. **Scheduling Ports**: Automated scheduling to minimize waiting time
+3. **Allocating Fuel**: Predictive allocation based on demand patterns
+4. **Tracking Real-time**: Live vessel tracking with ETA predictions
+
+## 📞 Contact & Support
+
+**Project Maintainer:** [Alvin Hidayatulloh](https://github.com/Alvinhidayatullah)
+
+**Github:** [GitHub](https://github.com/Alvinhidayatullah/Dashboard-FE---Shipping-Solar-Optimizer)
+
+**Email:** alvinhidayatullah3@example.com
+
+---
+
+<div align="center">
+
+**Built with ❤️ for sustainable energy distribution in Indonesia**
+
+⭐ **Star this repo if you find it useful!**
+
+</div>
+
+## 🔄 Project Status
+
+**Current Version:** 1.0.  
+**Last Updated:** December 2025
+**Active Development:** Yes  
+
+---
