@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from "react-leaflet";
+import "./MapVisualization.css";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import "./MapVisualization.css";
 
 // Fix for default icons in Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -86,7 +86,7 @@ const MapVisualization = ({ ports, routes, selectedPorts, vessels }) => {
         </div>
       </div>
 
-      <MapContainer center={center} zoom={zoom} style={{ height: "600px", width: "100%", borderRadius: "10px" }}>
+      <MapContainer center={center} zoom={zoom} style={{ height: "600px", width: "100%", borderRadius: "10px" }} scrollWheelZoom={true}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
 
         {/* Draw routes */}
