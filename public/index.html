@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Performance & Mobile Optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#0d47a1" />
+
+    <!-- Network Optimization -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Meta Description for SEO -->
+    <meta
+      name="description"
+      content="Shipping Solar Optimizer - Advanced maritime logistics system for efficient solar fuel distribution across Indonesian archipelago. Optimize vessel routing, port scheduling, and fuel allocation with AI-powered algorithms."
+    />
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="shipping solar optimizer, maritime logistics, solar fuel distribution, vessel routing optimization, port management, Indonesian archipelago, energy logistics, fuel transportation" />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Shipping Solar Optimizer" />
+    <meta property="og:description" content="Advanced maritime logistics system for solar fuel distribution across Indonesia" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shipping-solar-optimizer.com" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo-og.png" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shipping Solar Optimizer" />
+    <meta name="twitter:description" content="AI-powered maritime logistics for solar fuel distribution" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo-twitter.png" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#0d47a1" />
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#0d47a1" />
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/mstile-144x144.png" />
+    <meta name="msapplication-config" content="%PUBLIC_URL%/browserconfig.xml" />
+
+    <!-- PWA Theme Color -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#1565c0" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d47a1" />
+
+    <!-- Apple Mobile Web App Capable -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Solar Optimizer" />
+
+    <!-- Font Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Site Title -->
+    <title>Shipping Solar Optimizer | Maritime Logistics for Solar Distribution</title>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Shipping Solar Optimizer",
+        "description": "Advanced maritime logistics system for solar fuel distribution across Indonesian archipelago",
+        "url": "https://shipping-solar-optimizer.com",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Shipping Solar Optimizer",
+          "url": "https://shipping-solar-optimizer.com"
+        }
+      }
+    </script>
+
+    <!-- Google Analytics Script (Optional) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin />
+
+    <style>
+      /* === CRITICAL CSS FOR INITIAL LOAD === */
+
+      /* Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0c0e2b 0%, #1a237e 50%, #1565c0 100%);
+        color: #ffffff;
+        overflow-x: hidden;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+      }
+
+      /* Smooth scrolling */
+      body {
+        scroll-behavior: smooth;
+      }
+
+      /* Root Container */
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        opacity: 0;
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* === LOADING SCREEN STYLES === */
+
+      /* Loading Screen Container - FIXED POSITION */
+      #loading {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        z-index: 9999 !important;
+        pointer-events: none;
+      }
+
+      /* Loading Content */
+      .app-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0c0e2b 0%, #1a237e 50%, #1565c0 100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        contain: layout paint style;
+      }
+
+      .app-loading * {
+        pointer-events: auto;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+
+      /* Logo */
+      .loading-logo {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 35px;
+        animation: gentleFloat 5s ease-in-out infinite;
+        filter: drop-shadow(0 10px 25px rgba(21, 101, 192, 0.4));
+        transform: translateZ(0);
+      }
+
+      /* Title */
+      .loading-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.6rem;
+        font-weight: 800;
+        background: linear-gradient(45deg, #4fc3f7 0%, #29b6f6 25%, #03a9f4 50%, #29b6f6 75%, #4fc3f7 100%);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        text-align: center;
+        animation: gradientFlow 4s ease-in-out infinite, fadeInUp 1s ease-out;
+        transform: translateZ(0);
+      }
+
+      /* Subtitle */
+      .loading-subtitle {
+        font-size: 1.25rem;
+        opacity: 0.9;
+        margin-bottom: 45px;
+        text-align: center;
+        max-width: 650px;
+        line-height: 1.7;
+        animation: gentleFadeIn 1.2s ease-out 0.5s both;
+      }
+
+      /* Loading Animation Container */
+      .loading-animation {
+        display: flex;
+        gap: 25px;
+        margin-top: 40px;
+        animation: fadeInUp 1s ease-out 0.8s both;
+      }
+
+      /* Loading Dots */
+      .loading-dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+        animation: simplePulse 2s ease-in-out infinite;
+        box-shadow: 0 0 20px rgba(79, 195, 247, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+        transform: translateZ(0);
+      }
+
+      .loading-dot:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .loading-dot:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .loading-dot:nth-child(3) {
+        animation-delay: 0.8s;
+      }
+
+      /* === ANIMATIONS === */
+
+      @keyframes gentleFloat {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg) translateZ(0);
+          filter: drop-shadow(0 10px 25px rgba(21, 101, 192, 0.4));
+        }
+        33% {
+          transform: translateY(-12px) rotate(2deg) translateZ(0);
+          filter: drop-shadow(0 15px 30px rgba(21, 101, 192, 0.6));
+        }
+        66% {
+          transform: translateY(8px) rotate(-2deg) translateZ(0);
+          filter: drop-shadow(0 8px 20px rgba(21, 101, 192, 0.5));
+        }
+      }
+
+      @keyframes gradientFlow {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      @keyframes gentleFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 0.9;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes simplePulse {
+        0%,
+        100% {
+          opacity: 0.6;
+          transform: scale(0.95) translateZ(0);
+          box-shadow: 0 0 15px rgba(79, 195, 247, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.2);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05) translateZ(0);
+          box-shadow: 0 0 30px rgba(79, 195, 247, 0.7), inset 0 3px 6px rgba(255, 255, 255, 0.4);
+        }
+      }
+
+      /* === PERFORMANCE OPTIMIZATIONS === */
+
+      @media (prefers-reduced-motion: reduce) {
+        .loading-logo,
+        .loading-dot,
+        .loading-title,
+        .loading-subtitle,
+        .loading-animation {
+          animation: none !important;
+        }
+      }
+
+      /* Optimize SVG rendering */
+      .loading-logo svg {
+        image-rendering: crisp-edges;
+      }
+
+      /* === UTILITY === */
+
+      /* Hide loading when display: none */
+      #loading[style*="display: none"] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading" class="app-loading">
+      <div class="loading-logo">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Logo Design: Ship + Sun -->
+          <circle cx="100" cy="100" r="80" fill="url(#sunGradient)" />
+          <path d="M60 140 L100 60 L140 140 L120 140 L100 100 L80 140 Z" fill="#0D47A1" />
+          <path d="M70 130 L100 70 L130 130 L115 130 L100 95 L85 130 Z" fill="#42A5F5" />
+          <circle cx="100" cy="100" r="40" fill="#FFD600" />
+          <defs>
+            <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1565C0" />
+              <stop offset="100%" stop-color="#0D47A1" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <h1 class="loading-title">Shipping Solar Optimizer</h1>
+      <p class="loading-subtitle">Advanced System for Solar Fuel Distribution Across Indonesian Archipelago</p>
+      <div class="loading-animation">
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+      </div>
+    </div>
+
+    <!-- Main App Container -->
+    <div id="root"></div>
+
+    <!-- Loading Script -->
+    <script>
+      // 1. Critical: Set background immediately using requestAnimationFrame
+      requestAnimationFrame(() => {
+        document.documentElement.style.backgroundColor = "#0c0e2b";
+        document.body.style.backgroundColor = "#0c0e2b";
+        document.body.style.overflow = "hidden";
+      });
+
+      // 2. Performance variables
+      let loadingStartTime = performance.now();
+      const MIN_LOADING_TIME = 2000; // 2 detik
+      let animationFrameId = null;
+
+      // 3. Optimized hide function using requestAnimationFrame
+      window.hideLoadingScreen = function () {
+        const loading = document.getElementById("loading");
+        if (!loading || loading.style.display === "none") return false;
+
+        const elapsedTime = performance.now() - loadingStartTime;
+        if (elapsedTime < MIN_LOADING_TIME) {
+          // Schedule next check on next frame
+          animationFrameId = requestAnimationFrame(() => {
+            window.hideLoadingScreen();
+          });
+          return false;
+        }
+
+        console.log("Starting optimized loading transition...");
+
+        // === PERFORMANCE-OPTIMIZED ANIMATIONS ===
+
+        // Use will-change for GPU acceleration
+        loading.style.willChange = "opacity, transform";
+        loading.style.backfaceVisibility = "hidden";
+        loading.style.perspective = "1000px";
+
+        // Single animation for entire loading screen (lebih smooth)
+        loading.style.transition = "opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)";
+        loading.style.opacity = "0";
+        loading.style.transform = "translateY(-30px) scale(0.98)";
+
+        // Prepare root for smooth appearance
+        const root = document.getElementById("root");
+        if (root) {
+          root.style.willChange = "opacity";
+          root.style.opacity = "0";
+          root.style.transition = "opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.4s";
+        }
+
+        // Cleanup after animation completes
+        const cleanup = () => {
+          // Cancel any pending animation frame
+          if (animationFrameId) {
+            cancelAnimationFrame(animationFrameId);
+          }
+
+          // Hide loading
+          loading.style.display = "none";
+          loading.style.visibility = "hidden";
+          loading.style.willChange = "auto"; // Reset
+
+          // Show root
+          if (root) {
+            requestAnimationFrame(() => {
+              root.style.opacity = "1";
+              // Reset will-change after animation
+              setTimeout(() => {
+                root.style.willChange = "auto";
+              }, 600);
+            });
+          }
+
+          // Enable scrolling
+          requestAnimationFrame(() => {
+            document.body.style.overflow = "auto";
+            document.body.style.overflowX = "hidden";
+          });
+
+          console.log("Optimized transition complete");
+        };
+
+        // Schedule cleanup
+        setTimeout(cleanup, 1200);
+
+        return true;
+      };
+
+      // 4. Debounced React ready handler
+      let reactReadyTimeout = null;
+      window.addEventListener("ReactAppReady", function () {
+        if (reactReadyTimeout) clearTimeout(reactReadyTimeout);
+
+        reactReadyTimeout = setTimeout(() => {
+          requestAnimationFrame(() => {
+            if (window.hideLoadingScreen) {
+              window.hideLoadingScreen();
+            }
+          });
+        }, 100);
+      });
+
+      // 5. Performance-friendly fallback
+      setTimeout(function () {
+        requestAnimationFrame(() => {
+          if (window.hideLoadingScreen) {
+            window.hideLoadingScreen();
+          }
+        });
+      }, 3500);
+
+      // 6. Error handling without heavy DOM operations
+      window.addEventListener("error", function (e) {
+        console.error("App error:", e);
+
+        requestAnimationFrame(() => {
+          const loading = document.getElementById("loading");
+          if (loading) {
+            // Simple error display
+            loading.innerHTML = `
+          <div style="text-align: center; padding: 40px;">
+            <div style="font-size: 3rem; margin-bottom: 20px;">⚠️</div>
+            <h2 style="color: #ff5252; margin-bottom: 20px;">Loading Error</h2>
+            <button onclick="window.location.reload()" style="
+              background: #2979ff;
+              color: white;
+              border: none;
+              padding: 12px 24px;
+              border-radius: 6px;
+              font-size: 1rem;
+              cursor: pointer;
+            ">Refresh</button>
+          </div>
+        `;
+            document.body.style.overflow = "auto";
+          }
+        });
+      });
+
+      // 7. Initialize with performance optimizations
+      requestAnimationFrame(() => {
+        const loading = document.getElementById("loading");
+        const root = document.getElementById("root");
+
+        if (loading) {
+          // GPU acceleration setup
+          loading.style.transform = "translateZ(0)";
+          loading.style.backfaceVisibility = "hidden";
+        }
+
+        if (root) {
+          root.style.opacity = "0";
+          root.style.transform = "translateZ(0)"; // GPU layer
+        }
+      });
+
+      // 8. Prevent memory leaks
+      window.addEventListener("beforeunload", function () {
+        if (animationFrameId) {
+          cancelAnimationFrame(animationFrameId);
+        }
+        if (reactReadyTimeout) {
+          clearTimeout(reactReadyTimeout);
+        }
+      });
+    </script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log("ServiceWorker registration successful");
+            })
+            .catch((err) => {
+              console.log("ServiceWorker registration failed: ", err);
+            });
+        });
+      }
+    </script>
+
+    <!-- FINAL CLEANUP SCRIPT -->
+    <script>
+      // === FINAL CLEANUP SCRIPT ===
+      // Pastikan loading screen benar-benar hilang
+
+      window.addEventListener("load", function () {
+        // Backup removal setelah 5 detik
+        setTimeout(function () {
+          const loading = document.getElementById("loading");
+          if (loading) {
+            console.log("Force removing loading screen...");
+
+            // Hapus dengan berbagai cara
+            loading.style.display = "none";
+            loading.style.visibility = "hidden";
+            loading.style.opacity = "0";
+            loading.style.position = "absolute";
+            loading.style.zIndex = "-9999";
+
+            // Hapus dari DOM
+            setTimeout(() => {
+              if (loading.parentNode) {
+                loading.parentNode.removeChild(loading);
+                console.log("Loading screen force removed from DOM");
+              }
+            }, 300);
+          }
+
+          // Pastikan scroll enabled
+          document.body.style.overflow = "auto";
+          document.documentElement.style.overflow = "auto";
+        }, 5000); // 5 detik sebagai absolute backup
+      });
+
+      // Listen untuk scroll events - jika loading masih ada, hapus
+      window.addEventListener("scroll", function () {
+        const loading = document.getElementById("loading");
+        if (loading && (loading.style.display !== "none" || window.getComputedStyle(loading).display !== "none")) {
+          console.log("Scroll detected with loading still visible - removing");
+          loading.style.display = "none";
+        }
+      });
+    </script>
+
+    <!-- No Script Fallback -->
+    <noscript>
+      <div
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(135deg, #0c0e2b 0%, #1a237e 50%, #1565c0 100%);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 40px;
+          text-align: center;
+          z-index: 9999;
+        "
+      >
+        <div style="font-size: 4rem; margin-bottom: 30px">🚢</div>
+        <h1 style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 20px">Shipping Solar Optimizer</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; line-height: 1.6">JavaScript is required to run this application. Please enable JavaScript in your browser settings to continue.</p>
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 10px; max-width: 500px; margin-top: 20px">
+          <h3 style="margin-top: 0; color: #4fc3f7">How to enable JavaScript:</h3>
+          <ul style="text-align: left; padding-left: 20px">
+            <li>Chrome: Settings → Privacy and Security → Site Settings → JavaScript → Allowed</li>
+            <li>Firefox: Options → Privacy & Security → Permissions → Enable JavaScript</li>
+            <li>Safari: Preferences → Security → Enable JavaScript</li>
+            <li>Edge: Settings → Cookies and site permissions → JavaScript → Allowed</li>
+          </ul>
+        </div>
+      </div>
+    </noscript>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

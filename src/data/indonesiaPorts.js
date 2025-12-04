@@ -1,0 +1,87 @@
+export const indonesiaPorts = [
+  {
+    id: 1,
+    name: "Tanjung Priok (Jakarta)",
+    code: "IDJKT",
+    type: "main_port",
+    location: { lat: -6.1133, lng: 106.8807 },
+    capacity: { berth: 12, depth: 14, storage: 500000 },
+    demand: {
+      solar: 15000, // ton per bulan
+      diesel: 20000,
+      pertamax: 8000,
+    },
+    operatingHours: "24/7",
+    charges: {
+      pilotage: 1500,
+      berthing: 2500,
+      loading: 12, // USD/ton
+    },
+  },
+  {
+    id: 2,
+    name: "Tanjung Perak (Surabaya)",
+    code: "IDSUB",
+    type: "main_port",
+    location: { lat: -7.2056, lng: 112.7308 },
+    capacity: { berth: 8, depth: 12, storage: 300000 },
+    demand: { solar: 12000, diesel: 15000, pertamax: 6000 },
+    operatingHours: "24/7",
+    charges: { pilotage: 1200, berthing: 2000, loading: 10 },
+  },
+  {
+    id: 3,
+    name: "Balikpapan",
+    code: "IDBPN",
+    type: "oil_terminal",
+    location: { lat: -1.2675, lng: 116.8277 },
+    capacity: { berth: 6, depth: 16, storage: 400000 },
+    demand: { solar: 8000, diesel: 10000, pertamax: 4000 },
+    operatingHours: "06:00-22:00",
+    charges: { pilotage: 1000, berthing: 1800, loading: 8 },
+  },
+  {
+    id: 4,
+    name: "Makassar",
+    code: "IDUPG",
+    type: "transit_port",
+    location: { lat: -5.1354, lng: 119.4094 },
+    capacity: { berth: 4, depth: 10, storage: 150000 },
+    demand: { solar: 6000, diesel: 8000, pertamax: 3000 },
+    operatingHours: "08:00-20:00",
+    charges: { pilotage: 800, berthing: 1500, loading: 7 },
+  },
+  {
+    id: 5,
+    name: "Belawan (Medan)",
+    code: "IDBLW",
+    type: "main_port",
+    location: { lat: 3.7904, lng: 98.6907 },
+    capacity: { berth: 6, depth: 11, storage: 200000 },
+    demand: { solar: 10000, diesel: 12000, pertamax: 5000 },
+    operatingHours: "24/7",
+    charges: { pilotage: 1100, berthing: 1900, loading: 9 },
+  },
+  {
+    id: 6,
+    name: "Banjarmasin",
+    code: "IDBDJ",
+    type: "river_port",
+    location: { lat: -3.3186, lng: 114.5942 },
+    capacity: { berth: 3, depth: 8, storage: 80000 },
+    demand: { solar: 4000, diesel: 6000, pertamax: 2000 },
+    operatingHours: "07:00-19:00",
+    charges: { pilotage: 600, berthing: 1200, loading: 6 },
+  },
+  // Tambah lebih banyak...
+];
+
+export const portConnections = [
+  { from: "IDJKT", to: "IDSUB", distance: 432, sailingTime: 31 },
+  { from: "IDJKT", to: "IDBPN", distance: 756, sailingTime: 54 },
+  { from: "IDJKT", to: "IDBLW", distance: 890, sailingTime: 64 },
+  { from: "IDSUB", to: "IDUPG", distance: 345, sailingTime: 25 },
+  { from: "IDSUB", to: "IDBPN", distance: 324, sailingTime: 23 },
+  { from: "IDBPN", to: "IDUPG", distance: 278, sailingTime: 20 },
+  { from: "IDBLW", to: "IDBDJ", distance: 567, sailingTime: 41 },
+];
