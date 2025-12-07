@@ -17,7 +17,6 @@ Shipping Solar Optimizer is a comprehensive web-based platform designed to optim
 
 ### 🌟 Key Highlights
 - **Real-time vessel tracking** and route optimization
-- **AI-powered scheduling** for port operations
 - **Interactive map visualization** of Indonesian archipelago
 - **Fuel allocation management** with predictive analytics
 - **Performance dashboard** with comprehensive metrics
@@ -29,12 +28,6 @@ Shipping Solar Optimizer is a comprehensive web-based platform designed to optim
 - Port locations across Indonesian islands
 - Optimal route highlighting
 - Geographic data overlay
-
-### ⚡ AI-Powered Optimization
-- Dynamic route calculation based on weather and tides
-- Fuel consumption optimization algorithms
-- Port scheduling conflict resolution
-- Capacity planning and allocation
 
 ### 📊 Analytics Dashboard
 - Real-time performance metrics
@@ -91,8 +84,8 @@ Shipping Solar Optimizer is a comprehensive web-based platform designed to optim
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Alvinhidayatullah/Dashboard-FE---Shipping-Solar-Optimizer.git
-cd Dashboard-FE---Shipping-Solar-Optimizer
+git clone https://github.com/Alvinhidayatullah/Shipping-Solar-Optimizer.git
+cd Shipping-Solar-Optimizer
 ```
 
 2. **Install dependencies**
